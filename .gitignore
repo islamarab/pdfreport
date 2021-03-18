@@ -1,6 +1,7 @@
 # My dirs
 html report
 weasyprint
+.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
