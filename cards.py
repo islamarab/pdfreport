@@ -4,7 +4,7 @@ from reportlab.lib.colors import Color, black, white, grey, blue
 from cards_utils import __city_card
 
 
-def city_card(c, x, y, w=None, h=None, data: dict = None):
+def city_card_left_circle(c, x, y, w=None, h=None, data: dict = None):
     """ ."""
 
     assert isinstance(data, dict), "data is not Dict"
@@ -84,7 +84,7 @@ def city_card(c, x, y, w=None, h=None, data: dict = None):
     )
 
 
-def city_card_reversed(c, x, y, w=None, h=None, data: dict = None):
+def city_card_right_circle(c, x, y, w=None, h=None, data: dict = None):
     """ ."""
 
     assert isinstance(data, dict), "data is not Dict"

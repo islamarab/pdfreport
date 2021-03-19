@@ -7,7 +7,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.colors import Color, black, white, grey
 
 from utils import to_mm, rgb, shadow
-from cards import city_card, city_card_reversed
+from cards import city_card_left_circle, city_card_right_circle
 
 
 def country_card(c, x, y, w, h):
@@ -275,15 +275,15 @@ def main(c):
         ],
         "proportion_of_the_total_area": 12.6
     }
-    city_card(c=c,
-              x=A4[0] * 0.13, y=450,
-              w=None, h=None,
-              data=city_data)
+    city_card_left_circle(c=c,
+                          x=A4[0] * 0.13, y=450,
+                          w=None, h=None,
+                          data=city_data)
 
-    city_card_reversed(c=c,
-                       x=A4[0] * 0.13, y=300,
-                       w=None, h=None,
-                       data=city_data)
+    city_card_right_circle(c=c,
+                           x=A4[0] * 0.13, y=300,
+                           w=None, h=None,
+                           data=city_data)
 
     c.showPage()
 
